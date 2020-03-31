@@ -43,12 +43,15 @@ nav {
     height: 50px;
 }
 
-.nav-list li, a {
-    text-decoration: none;
-    text-shadow: 2px 2px 5px black;
+.nav-list li {
     display: inline;
     padding: 5px;
     list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
     font-family: 'Lato', Helvetica, sans-serif;
     font-size: 20px;
     color: rgb(172, 172, 172);
@@ -66,10 +69,9 @@ nav {
     display: inline-block;
 }
 
-.container-school {
-    text-align: left;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.container-mid {
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 5px;
     padding-right: 5px;
     width: 600px;
@@ -77,12 +79,25 @@ nav {
     margin-right: auto;
 }
 
-.container-school p {
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-mid p {
     width: 100%;
 }
 
-.container-school span {
+.container-mid span {
     float: right;
+}
+
+.default-links {
+    color: white;
+    text-decoration: none;
 }
 
 .bullets {
@@ -92,6 +107,23 @@ nav {
 }
 
 .bullets li {
+    padding: 5px;
+}
+
+.skill-bar {
+    height: 40px;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.skill {
+    height: 20px;
+    border: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+    text-align: center;
     padding: 5px;
 }
 
@@ -131,7 +163,6 @@ nav {
 
 #about-me {
     background-color: #222222;
-    height: 1000px;
 }
 
 p {
