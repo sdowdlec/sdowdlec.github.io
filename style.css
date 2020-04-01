@@ -95,6 +95,15 @@ nav {
     float: right;
 }
 
+.container-mid-logo {
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .default-links {
     color: white;
     text-decoration: none;
@@ -113,7 +122,8 @@ nav {
 .skill-bar {
     height: 40px;
     display: inline-flex;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .skill {
@@ -125,6 +135,23 @@ nav {
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+.table-container {
+    padding: 10px;
+}
+
+.media-showcase {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-sect-head {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lato';
+    font-size: 24px;
 }
 
 .name-title {
@@ -161,8 +188,20 @@ nav {
     padding-bottom: 50px;
 }
 
-#about-me {
-    background-color: #222222;
+.school-head {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-shadow: 2px 2px 5px black;
+    padding-bottom: 10px;
+}
+
+.school-head-info {
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-shadow: 2px 2px 5px black;
+    padding-bottom: 5px;
 }
 
 p {
@@ -174,17 +213,20 @@ p {
     padding-bottom: 10px;
 }
 
+/* TODO- Look into CSS media queries to change size of static divs if window gets smaller than their size*/
+
+#about-me {
+    background-color: #222222;
+}
+
 #education {
     background-color:#181818;
-    height: auto;
 }
 
 #experience {
     background-color: #222222;
-    height: auto;
 }
 
 #projects {
     background-color: #181818;
-    height: auto;
 }
