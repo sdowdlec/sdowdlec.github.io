@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Sean Dowdle | Work In Progress</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="icon" href="sd-32x32.png">
+        <link rel="stylesheet" media="screen and (min-width: 800px)" href="widescreen.css">
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="smallscreen.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -33,7 +34,9 @@
                 </h1>
                 <div class="long-hline"></div>
                 <div class="container-mid text-center">
-                    <img src="portrait.png" alt="Portrait" width="200" height="200">
+                    <a href="https://www.linkedin.com/in/sdowdle/" target="_blank">
+                        <img src="portrait.png" alt="Portrait" width="200" height="200">
+                    </a>
                 </div>
                 <div class="container-mid text-center">
                     <p>
@@ -50,14 +53,19 @@
                     Education
                 </h1>
                 <div class="long-hline"></div>
+                <div class="container-mid-logo center">
+                    <img src="uci-logo.png" width="100px" height="15%" alt="UCI Logo">
+                </div>
                 <div class="container-mid text-left">
-                    <p>
-                        <b>University of California, Irvine</b>
+                    <h2 class="school-head">
+                        University of California, Irvine
                         <span><em>Sept. 2018 - Jun. 2020</em></span>
-                        <br><br>
-                        <b>B.S. Computer Science</b>
+                    </h2>
+                    <h3 class="school-head-info">
+                        B.S. Computer Science
                         <span><em>GPA: 3.72</em></span>
-                        <br><br><br>
+                    </h3>
+                    <p>
                         Relevant Coursework:
                     </p>
                     <ul class="bullets">
@@ -77,13 +85,17 @@
                         <li>Programming in Multitasking Operating Systems</li>
                     </ul>
                 </div>
+                <div class="container-mid-logo center">
+                    <img src="OCC-logo.png" width="100px" height="15%" alt="OCC Logo">
+                </div>
                 <div class="container-mid text-left">
-                    <p>
-                        <b>Orange Coast College</b>
+                    <h2 class="school-head">
+                        Orange Coast College
                         <span><em>Aug. 2015 - May 2018</em></span>
-                        <br><br>
-                        <b>A.S. Mathematics</b>
-                    </p>
+                    </h2>
+                    <h3 class="school-head-info">
+                        A.S. Mathematics
+                    </h3>
                 </div>
             </div>
         </section>
@@ -173,6 +185,186 @@
                     Projects
                 </h1>
                 <div class="long-hline"></div>
+                <div class="container-mid text-left">
+                    <p><em>Below are some of the projects I've worked on (personally and academically) over the years.</em></p>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        Indecisive Gainz
+                    </h2>
+                    <p>
+                        Created a GUI fitness application where users can create, track, and generate exercises and routines.
+                        <br><br><br>
+                        Users can sign up for an account and log in.
+                        <br>
+                        <em>Passwords are salted and hashed using BCrypt for security.</em>
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGsignup.PNG" width="40%" height="40%" alt="Login Screen">
+                        <img src="IGlogin.PNG" width="40%" height="40%" alt="Login Screen">
+                    </div>
+                    <p>
+                        If a workout is not already known to the application, users can create it.
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGcreate.PNG" width="90%" height="90%" alt="Create Workout Screen">
+                    </div>
+                    <p>
+                        When working out, users can enter how much weight and how many reps they lifted each set so they can track their progress.
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGtrack.PNG" width="90%" height="90%" alt="Track Workout Screen">
+                    </div>
+                    <p>
+                        If users are feeling <em>indecisive</em>, then they can let the app generate a routine!
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGgenerate.PNG" width="90%" height="90%" alt="Generate Workout Screen 1">
+                    </div>
+                    <p>
+                        Users can enter which muscle groups they want to work on and how many different workouts per muscle group.
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGgenerate2.PNG" width="90%" height="90%" alt="Generate Workout Screen 2">
+                    </div>
+                    <p>
+                        Tada!
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="IGgenerate3.PNG" width="90%" height="90%" alt="Generate Workout Screen 3">
+                    </div>
+                    <div class="skill-bar center">
+                        <div class="skill">Java</div>
+                        <div class="skill">JavaFX</div>
+                        <div class="skill">FXML</div>
+                        <div class="skill">SQLite</div>
+                        <div class="skill">MVC Architecture</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        Smart Room
+                    </h2>
+                    <p>
+                        Created an IoT device capable of passively monitoring rooms for safety measures while also
+                        uploading the data for live analytics via Azure IoT Hub.
+                        <br>
+                        <br>
+                        Features include:
+                    </p>
+                    <ul class="bullets">
+                        <li>Room occupancy detection via ultra-sonic sensors.</li>
+                        <li>Fire detection via temperature and gas sensors.</li>
+                        <li>Alerts when safety hazards are detected.</li>
+                    </ol>
+                    <p>
+                        <br>
+                        Below is a short, audio-less demonstration of some of the features.
+                    </p>
+                    <div class="media-showcase center">
+                        <iframe width="100%" height="350px"
+                            src="https://www.youtube.com/embed/5aCwfVqEsLY">
+                        </iframe>
+                    </div>
+                    <div class="skill-bar center">
+                        <div class="skill">C</div>
+                        <div class="skill">Arduino</div>
+                        <div class="skill">Azure</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        "Cyclone" Arcade Game
+                    </h2>
+                    <p>
+                        Designed an embedded computer based on the ATmega32 microcontroller to mimic the reaction-based arcade game 
+                        <em><u><a href="https://www.icegame.com/category/93/cyclone" target="_blank" class="default-links">Cyclone</a></u></em>.
+                    </p>
+                    <div class="media-showcase center">
+                        <img src="cyclone.jpg" width="90%" height="90%" alt="Cyclone game">
+                    </div>
+                    <div class="skill-bar center">
+                        <div class="skill">C</div>
+                        <div class="skill">ATmega32</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        E-Commerce Website (In-Progress)
+                    </h2>
+                    <p>
+                        Developed an e-commerce where. . .
+                        <br><br>
+                        Developed in 4 stages:
+                    </p>
+                    <ul class="bullets">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP, MySQL</li>
+                        <li>Java Servlets</li>
+                        <li>REST</li>
+                    </ol>
+                    <div class="skill-bar center">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">PHP</div>
+                        <div class="skill">MySQL</div>
+                        <div class="skill">Java Servlets</div>
+                        <div class="skill">REST</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        Search Engine
+                    </h2>
+                    <p>
+                        Developed 
+                    </p>
+                    <!--
+                    <div class="media-showcase center">
+                        <img src="" width="90%" height="90%" alt="Simple Search Engine">
+                    </div>
+                    -->
+                    <div class="skill-bar center">
+                        <div class="skill">Python</div>
+                        <div class="skill">BeautifulSoup</div>
+                        <div class="skill">NLTK</div>
+                        <div class="skill">TKinter</div>
+                        <div class="skill">JSON</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        Checkers AI
+                    </h2>
+                    <p>
+                        Developed an AI to play checkers using Alpha-Beta Pruning.
+                        <br><br>
+                        Evaluated each board state using heuristics with varying weights such as:
+                    </p>
+                    <ul class="bullets">
+                        <li>Number of normal peices</li>
+                        <li>Number of king peices</li>
+                        <li>Distance to become king</li>
+                        <li>Calculating the euclidean distance between each peice to incentivize the winning player to chase and losing player to run</li>
+                    </ol>
+                    <div class="skill-bar center">
+                        <div class="skill">C++</div>
+                    </div>
+                </div>
+                <div class="container-mid text-left">
+                    <h2 class="sub-sect-head">
+                        Personal Website
+                    </h2>
+                    <p>
+                        You are here :)
+                    </p>
+                    <div class="skill-bar center">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                    </div>
+                </div>
             </div>
         </section>
 
