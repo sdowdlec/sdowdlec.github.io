@@ -206,6 +206,13 @@ nav {
     font-size: 24px;
 }
 
+@media screen and (max-width: 600px) {
+    .sub-sect-head {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
 .name-title {
     position: absolute;
     width: 100%;
@@ -225,7 +232,7 @@ nav {
 
 @media screen and (max-width: 900px) {
     .short-hline {
-        width: 90%;
+        width: 35%;
     }
 }
 
@@ -260,9 +267,10 @@ nav {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .school-head {
         width: 100%;
+        font-size: 16px;
     }
 }
 
@@ -272,6 +280,13 @@ nav {
     font-family: 'Lato';
     text-shadow: 2px 2px 5px black;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .school-head-info {
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
 p {
