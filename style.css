@@ -78,6 +78,12 @@ nav {
     margin-right: auto;
 }
 
+@media screen and (max-width: 900px) {
+    .container-mid {
+        width: 100%;
+    }
+}
+
 .text-left {
     text-align: left;
 }
@@ -101,6 +107,12 @@ nav {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .container-mid-logo {
+        width: 100%;
+    }
 }
 
 .default-links {
@@ -128,6 +140,12 @@ nav {
     padding-bottom: 5px;
 }
 
+@media screen and (max-width: 900px) {
+    .skill-bar {
+        width: 100%;
+    }
+}
+
 .skill {
     height: 20px;
     border: solid;
@@ -148,6 +166,36 @@ nav {
 .media-showcase {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .media-showcase {
+        width: 100%;
+    }
+}
+
+.media-size {
+    width: 500px;
+    height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .media-size {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.media-size-half {
+    width: 250px;
+    height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .media-size-half {
+        width: 30%;
+        height: 30%;
+    }
 }
 
 .sub-sect-head {
@@ -175,6 +223,12 @@ nav {
     margin-right: auto;
 }
 
+@media screen and (max-width: 900px) {
+    .short-hline {
+        width: 90%;
+    }
+}
+
 .long-hline {
     display: block;
     background-color: white;
@@ -182,6 +236,12 @@ nav {
     width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .long-hline {
+        width: 90%;
+    }
 }
 
 .sect-head {
@@ -198,6 +258,12 @@ nav {
     font-family: 'Lato';
     text-shadow: 2px 2px 5px black;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .school-head {
+        width: 100%;
+    }
 }
 
 .school-head-info {

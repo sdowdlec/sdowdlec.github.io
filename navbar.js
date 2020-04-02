@@ -76,6 +76,7 @@ $(window).scroll(function() {
   }
   else
   {
+    // In the header
     navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
   }
 });
