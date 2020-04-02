@@ -117,6 +117,9 @@ nav {
 
 .bullets li {
     padding: 5px;
+    font-family: 'Lato';
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 .skill-bar {
@@ -135,6 +138,8 @@ nav {
     color: white;
     text-align: center;
     padding: 5px;
+    box-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px black;
 }
 
 .table-container {
@@ -198,10 +203,10 @@ nav {
 
 .school-head-info {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Lato';
     text-shadow: 2px 2px 5px black;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 p {
