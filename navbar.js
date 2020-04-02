@@ -1,4 +1,3 @@
-/* ~~~~~~~~~~~~~~~~~~~ Nav Bar ~~~~~~~~~~~~~~~~~~~ */
 // For sticking the navbar
 const navbar = document.querySelector('nav');
 const navbarParent = navbar.parentElement;
@@ -10,6 +9,7 @@ var aboutmeSize = $('#about-me').outerHeight();
 var educationSize = $('#education').outerHeight();
 var experienceSize = $('#experience').outerHeight();
 var projectSize = $('#projects').outerHeight();
+
 
 // Helper function to determine if the navbar needs to be stickied or not
 function stickyNav() {
@@ -51,8 +51,6 @@ $(window).scroll(function() {
     // In About Me section
     navAboutText.setAttribute('style', 'color: white;');
     navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
   }
   else if(scrollPosition >= headerSize + aboutmeSize && scrollPosition < headerSize + aboutmeSize + educationSize)
   {
@@ -60,13 +58,11 @@ $(window).scroll(function() {
     navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
     navEduText.setAttribute('style', 'color: white;');
     navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
   }
   else if(scrollPosition >= headerSize + aboutmeSize + educationSize 
           && scrollPosition < headerSize + aboutmeSize + educationSize + experienceSize)
   {
     // In Experience section
-    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
     navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
     navExpText.setAttribute('style', 'color: white;');
     navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
@@ -75,17 +71,11 @@ $(window).scroll(function() {
           && scrollPosition < headerSize + aboutmeSize + educationSize + experienceSize + projectSize)
   {
     // In Projects section
-    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
     navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
     navProjText.setAttribute('style', 'color: white;');
   }
-  else{
+  else
+  {
     navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
   }
 });
-
-/* ~~~~~~~~~~~~~~~~~~~ Nav Bar Handling Offset ~~~~~~~~~~~~~~~~~~~ */
