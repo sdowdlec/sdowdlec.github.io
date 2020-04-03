@@ -123,7 +123,8 @@ nav {
 
 .bullets {
     color: white;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 20px;
     width: 100%;
 }
 
@@ -144,7 +145,7 @@ nav {
 @media screen and (max-width: 900px) {
     .skill-bar {
         width: 100%;
-        display: inline-flexbox;
+        display: inline-flex;
     }
 }
 
