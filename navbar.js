@@ -67,8 +67,7 @@ $(window).scroll(function() {
     navExpText.setAttribute('style', 'color: white;');
     navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
   }
-  else if(scrollPosition >= headerSize + aboutmeSize + educationSize + experienceSize
-          && scrollPosition < headerSize + aboutmeSize + educationSize + experienceSize + projectSize)
+  else if(scrollPosition >= headerSize + aboutmeSize + educationSize + experienceSize)
   {
     // In Projects section
     navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
