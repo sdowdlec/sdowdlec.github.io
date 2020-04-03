@@ -129,7 +129,8 @@ nav {
 }
 
 .bullets li {
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: 'Lato';
     color: white;
     text-shadow: 2px 2px 5px black;
