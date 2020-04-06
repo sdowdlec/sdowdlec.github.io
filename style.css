@@ -232,13 +232,13 @@ nav {
 
 .name {
     font-size: 24px;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 15px;
 }
 
 .title {
     font-size: 20px;
-    font-family: "Helvetica";
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 15px;
 }
 
