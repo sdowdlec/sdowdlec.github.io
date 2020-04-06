@@ -11,8 +11,8 @@ var experienceSize = $('#experience').outerHeight();
 var projectSize = $('#projects').outerHeight();
 
 
-// Helper function to determine if the navbar needs to be stickied or not
 function stickyNav() {
+  // Helper function to determine if the navbar needs to be stickied or not
   if(window.scrollY >= navPosition) {
     navbar.classList.add('sticky-nav');
   }
@@ -21,6 +21,58 @@ function stickyNav() {
   }
 }
 
+function changeNavColors() {
+  // Detect where the user is on the page so we can dynamically change the color of the navbar text
+  var midOfScreen = Math.floor($(window).height() / 2);
+  var scrollPosition = window.scrollY + midOfScreen;
+
+  var navAboutText = document.getElementById('nav-about');
+  var navEduText = document.getElementById('nav-edu');
+  var navExpText = document.getElementById('nav-exp');
+  var navProjText = document.getElementById('nav-proj');
+
+  if(scrollPosition >= headerSize && scrollPosition < headerSize + aboutmeSize)
+  {
+    // In About Me section
+    navAboutText.setAttribute('style', 'color: white;');
+    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
+  }
+  else if(scrollPosition >= headerSize + aboutmeSize && scrollPosition < headerSize + aboutmeSize + educationSize)
+  {
+    // In Education section
+    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navEduText.setAttribute('style', 'color: white;');
+    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
+  }
+  else if(scrollPosition >= headerSize + aboutmeSize + educationSize 
+          && scrollPosition < headerSize + aboutmeSize + educationSize + experienceSize)
+  {
+    // In Experience section
+    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navExpText.setAttribute('style', 'color: white;');
+    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
+  }
+  else if(scrollPosition >= headerSize + aboutmeSize + educationSize + experienceSize)
+  {
+    // In Projects section
+    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navProjText.setAttribute('style', 'color: white;');
+  }
+  else
+  {
+    // In the header
+    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
+    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
+  }
+}
 
 // Add a listener to recalculate where the top of the navbar should be on window resizing
 $(window).resize(function() {
@@ -36,46 +88,5 @@ $(window).resize(function() {
 // Add listener for scrolling and call the function on event
 $(window).scroll(function() {
   stickyNav();
-
-  // Now detect where the user is on the page so we can dynamically change the color of the navbar text
-  var midOfScreen = Math.floor($(window).height() / 2);
-  var scrollPosition = window.scrollY + midOfScreen;
-
-  var navAboutText = document.getElementById('nav-about');
-  var navEduText = document.getElementById('nav-edu');
-  var navExpText = document.getElementById('nav-exp');
-  var navProjText = document.getElementById('nav-proj');
-
-  if(scrollPosition >= headerSize && scrollPosition < headerSize + aboutmeSize)
-  {
-    // In About Me section
-    navAboutText.setAttribute('style', 'color: white;');
-    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
-  }
-  else if(scrollPosition >= headerSize + aboutmeSize && scrollPosition < headerSize + aboutmeSize + educationSize)
-  {
-    // In Education section
-    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navEduText.setAttribute('style', 'color: white;');
-    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
-  }
-  else if(scrollPosition >= headerSize + aboutmeSize + educationSize 
-          && scrollPosition < headerSize + aboutmeSize + educationSize + experienceSize)
-  {
-    // In Experience section
-    navEduText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navExpText.setAttribute('style', 'color: white;');
-    navProjText.setAttribute('style', 'color: rgb(172, 172, 172);');
-  }
-  else if(scrollPosition >= headerSize + aboutmeSize + educationSize + experienceSize)
-  {
-    // In Projects section
-    navExpText.setAttribute('style', 'color: rgb(172, 172, 172);');
-    navProjText.setAttribute('style', 'color: white;');
-  }
-  else
-  {
-    // In the header
-    navAboutText.setAttribute('style', 'color: rgb(172, 172, 172);');
-  }
+  changeNavColors();
 });
