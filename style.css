@@ -230,6 +230,18 @@ nav {
     text-shadow: 2px 2px 5px black;
 }
 
+.name {
+    font-size: 24px;
+    font-family: Arial;
+    padding-bottom: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: "Helvetica";
+    padding-top: 15px;
+}
+
 .short-hline {
     display: block;
     background-color: white;
