@@ -319,6 +319,27 @@ p {
     padding-bottom: 10px;
 }
 
+.accordian {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    text-align: left;
+    font-style: italic;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+}
+
 #about-me {
     background-color: #222222;
 }

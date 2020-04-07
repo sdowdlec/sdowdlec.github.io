@@ -198,43 +198,39 @@
                     <p>
                         Created a GUI fitness application where users can create, track, and generate exercises and routines.
                         <br><br><br>
-                        Users can sign up for an account and log in.
-                        <br>
-                        <em>Passwords are salted and hashed using BCrypt for security.</em>
+                        Users Can:
                     </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGsignup.PNG" class="media-size-half" alt="Login Screen">
-                        <img src="assets/IGlogin.PNG" class="media-size-half" alt="Login Screen">
-                    </div>
-                    <p>
-                        If a workout is not already known to the application, users can create it.
-                    </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGcreate.PNG" class="media-size" alt="Create Workout Screen">
-                    </div>
-                    <p>
-                        When working out, users can enter how much weight and how many reps they lifted each set so they can track their progress.
-                    </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGtrack.PNG" class="media-size" alt="Track Workout Screen">
-                    </div>
-                    <p>
-                        If users are feeling <em>indecisive</em>, then they can let the app generate a routine!
-                    </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGgenerate.PNG" class="media-size" alt="Generate Workout Screen 1">
-                    </div>
-                    <p>
-                        Users can enter which muscle groups they want to work on and how many different workouts per muscle group.
-                    </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGgenerate2.PNG" class="media-size" alt="Generate Workout Screen 2">
-                    </div>
-                    <p>
-                        Tada!
-                    </p>
-                    <div class="media-showcase center">
-                        <img src="assets/IGgenerate3.PNG" class="media-size" alt="Generate Workout Screen 3">
+                    <ul class="bullets">
+                        <li>Create accounts (uses BCrypt to salt and hash passwords for security)</li>
+                        <li>Login</li>
+                        <li>Create new workouts that are not already included</li>
+                        <li>Track workout progress (i.e. weight lifted and reps achieved)</li>
+                        <li>View workout history and general statistics</li>
+                        <li>Generate routines based on specified criteria (i.e. desired muscle groups and volume)</li>
+                    </ul>
+                    <button class="accordian">
+                        View Screenshots
+                    </button>
+                    <div class="panel">
+                        <div class="media-showcase center">
+                            <img src="assets/IGsignup.PNG" class="media-size-half" alt="Login Screen">
+                            <img src="assets/IGlogin.PNG" class="media-size-half" alt="Login Screen">
+                        </div>
+                        <div class="media-showcase center">
+                            <img src="assets/IGcreate.PNG" class="media-size" alt="Create Workout Screen">
+                        </div>
+                        <div class="media-showcase center">
+                            <img src="assets/IGtrack.PNG" class="media-size" alt="Track Workout Screen">
+                        </div>
+                        <div class="media-showcase center">
+                            <img src="assets/IGgenerate.PNG" class="media-size" alt="Generate Workout Screen 1">
+                        </div>
+                        <div class="media-showcase center">
+                            <img src="assets/IGgenerate2.PNG" class="media-size" alt="Generate Workout Screen 2">
+                        </div>
+                        <div class="media-showcase center">
+                            <img src="assets/IGgenerate3.PNG" class="media-size" alt="Generate Workout Screen 3">
+                        </div>
                     </div>
                     <div class="skill-bar center">
                         <div class="skill">Java</div>
@@ -260,14 +256,18 @@
                         <li>Fire detection via temperature and gas sensors.</li>
                         <li>Alerts when safety hazards are detected.</li>
                     </ul>
-                    <p>
-                        <br>
-                        Below is a short, audio-less demonstration of some of the features.
-                    </p>
-                    <div class="media-showcase center">
-                        <iframe class="media-size"
-                            src="https://www.youtube.com/embed/5aCwfVqEsLY">
-                        </iframe>
+                    <button class="accordian">
+                        View Demo
+                    </button>
+                    <div class="panel">
+                        <p>
+                            Below is a short, audio-less demonstration of some of the features.
+                        </p>
+                        <div class="media-showcase center">
+                            <iframe class="media-size"
+                                src="https://www.youtube.com/embed/5aCwfVqEsLY">
+                            </iframe>
+                        </div>
                     </div>
                     <div class="skill-bar center">
                         <div class="skill">C</div>
@@ -292,8 +292,13 @@
                         <li>If the player is not successful: a sad jingle plays, the player wins a small amount of points based on how close they were, 
                             and the jackpot goes up.</li>
                     </ul>
-                    <div class="media-showcase center">
-                        <img src="assets/cyclone.jpg" class="media-size" alt="Cyclone game">
+                    <button class="accordian">
+                        View Picture
+                    </button>
+                    <div class="panel">
+                        <div class="media-showcase center">
+                            <img src="assets/cyclone.jpg" class="media-size" alt="Cyclone game">
+                        </div>
                     </div>
                     <div class="skill-bar center">
                         <div class="skill">C</div>
@@ -356,8 +361,8 @@
                         Evaluated each board state using heuristics with varying weights such as:
                     </p>
                     <ul class="bullets">
-                        <li>Number of normal peices</li>
-                        <li>Number of king peices</li>
+                        <li>Number of normal pieces</li>
+                        <li>Number of king pieces</li>
                         <li>Distance to become king</li>
                         <li>Euclidean distance between each peice (incentivizes the winning player to chase and the losing player to run)</li>
                     </ul>
@@ -383,5 +388,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="navbar.js" type="text/javascript"></script>
+        <script src="accordian.js" type="text/javascript"></script>
     </body>
 </html>
