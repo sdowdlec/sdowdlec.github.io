@@ -207,6 +207,18 @@ nav {
     }
 }
 
+.media-size-yt {
+    width: 500px;
+    height: 300px;
+}
+
+@media screen and (max-width: 900px) {
+    .media-size-yt {
+        width: 50%;
+        height: 200px;
+    }
+}
+
 .sub-sect-head {
     color: white;
     padding-top: 10px;
